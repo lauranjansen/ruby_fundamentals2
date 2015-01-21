@@ -13,3 +13,9 @@ grocery_list << "rice"
 displist(grocery_list)
 
 puts "There are #{grocery_list.count} items on your list."
+
+if grocery_list.index("bananas")
+	puts "Don't forget to buy bananas!"
+else
+	puts "You don't need to buy bananas."
+end
