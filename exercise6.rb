@@ -6,8 +6,10 @@ def displist(ary)
 	end
 end
 
-displist(grocery_list)
+#displist(grocery_list)
 
 grocery_list << "rice"
 
 displist(grocery_list)
+
+puts "There are #{grocery_list.count} items on your list."
