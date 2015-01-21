@@ -1,11 +1,13 @@
 grocery_list = ["yoghurt", "bananas", "cereal", "beer", "snacks"]
 
-grocery_list.each do |item|
-	puts "* #{item}"
+def displist(ary)
+	ary.each do |item|
+		puts "* #{item}"
+	end
 end
+
+displist(grocery_list)
 
 grocery_list << "rice"
 
-grocery_list.each do |item|
-	puts "* #{item}"
-end
+displist(grocery_list)
