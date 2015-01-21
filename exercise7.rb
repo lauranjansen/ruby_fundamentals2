@@ -26,3 +26,9 @@ displash(students)
 students.delete(:cohort2)
 
 displash(students)
+
+total_students = 0
+students.each_key do |key|
+	total_students += students[key]
+end
+puts "The total number of students in all the cohorts is #{total_students}."
