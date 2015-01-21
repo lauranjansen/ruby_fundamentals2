@@ -4,6 +4,7 @@ def displist(ary)
 	ary.each do |item|
 		puts "* #{item}"
 	end
+	puts
 end
 
 #displist(grocery_list)
@@ -22,6 +23,10 @@ end
 
 puts "The second item on the list is #{grocery_list[1]}."
 
-puts "Alphabetized:"
+puts "\nAlphabetized:"
 grocery_list.sort!
+displist(grocery_list)
+
+puts "What? No snacks?!"
+grocery_list.delete("snacks")
 displist(grocery_list)
